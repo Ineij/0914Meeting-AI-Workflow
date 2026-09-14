@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="AI 科研工作流：理解研究、处理文献、优化写作与反向质疑。" />
+  <title>AI 科研工作流</title>
+  <link rel="icon" href="data:," />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="scroll-progress" aria-hidden="true"><span id="progressBar"></span></div>
+
+  <header class="topbar">
+    <a class="brand" href="#part3" aria-label="返回开场">
+      <span class="brand-mark"></span>
+      <span>AI 科研工作流</span>
+    </a>
+    <nav class="part-nav" aria-label="AI 工作流阶段">
+      <a class="part active" href="#part3"><b>00</b><span>开场</span></a>
+      <a class="part" href="#learn"><b>01</b><span>Learn</span></a>
+      <a class="part" href="#review"><b>02</b><span>Review</span></a>
+      <a class="part" href="#write"><b>03</b><span>Write</span></a>
+      <a class="part" href="#challenge"><b>04</b><span>Challenge</span></a>
+    </nav>
+    <button class="soundless" id="modeToggle" type="button" aria-label="切换深浅主题">◐</button>
+  </header>
+
+  <main>
+<section class="part3-hero section-dark" id="part3" data-nav="16">
+      <div class="part3-glow" aria-hidden="true"></div>
+      <div class="section-index">PART 03 · AI RESEARCH WORKFLOW</div>
+      <div class="part3-hero-copy reveal">
+        <p class="kicker">AI 科研工作流</p>
+        <h1 class="part3-title">
+          <span>先想清楚，</span>
+          <span>再让 <em>AI</em> 帮忙。</span>
+        </h1>
+        <p class="part3-en">Think First. Then Ask AI.</p>
+        <p class="part3-sub">AI 不是替我做科研，而是在科研不同阶段承担不同角色。<br>真正的 Researcher，始终是自己。</p>
+        <div class="human-ai-line reveal" aria-label="人类思考延伸出 AI 辅助">
+          <span>人类思考</span><i></i><span>AI 辅助</span>
+        </div>
+      </div>
+      <div class="hero-bottom reveal">
+        <p>Research Judgment × AI Augmentation</p>
+        <a class="round-link" href="#learn" aria-label="继续阅读"><span>↓</span></a>
+      </div>
+    </section>
+
+    <section class="learn section-warm" id="learn" data-nav="17">
+        <div class="section-index dark">01 / LEARN</div>
+        <div class="learn-head reveal">
+          <span class="p3-role">AI = Tutor · Research Guide</span>
+          <h2>AI 最适合帮我理解别人怎么研究，<br><em>但不能替我决定自己怎么研究。</em></h2>
+        </div>
+        <div class="learn-cols">
+          <div class="learn-col reveal">
+            <span class="col-label">进入陌生方向时</span>
+            <p class="col-body">先让 AI 帮我找：奠基性论文 · 高引用 · 经典方法 · 近几年前沿 · 重要作者 / 团队 · 方法演进脉络。</p>
+            <span class="col-outcome">→ 先建立 Research Map，再回到原文精读</span>
+          </div>
+          <div class="learn-col reveal">
+            <span class="col-label">AI 真正擅长的是「解释」</span>
+            <p class="col-body">把一篇复杂论文拆解为：Research Question → Why this Method → Input → Process → Output → Innovation。</p>
+            <span class="col-outcome">→ 快速理解别人到底做了什么</span>
+          </div>
+        </div>
+        <div class="skeleton-block reveal">
+          <span class="skeleton-label">Rough Research Skeleton · 先由人完成</span>
+          <p>广泛阅读 + 自己思考，先形成研究问题、研究边界、大概方法框架，以及哪些要做、哪些明确不做。</p>
+          <div class="skeleton-tags"><span>研究问题</span><span>研究边界</span><span>方法框架</span><span>要做</span><span>不做</span></div>
+          <p class="then-ai">然后才和 AI 交互：找漏洞 · 优化方法 · 比较替代方案 · 检查逻辑 · 补充没想到的问题</p>
+        </div>
+        <div class="learn-highlight reveal">
+          <p>AI 有时会<em>过度顺从</em>你已经提出的观点。<br>先有人类的轮廓，再让 AI 扩展；<br>不要先让 AI 画轮廓，再由人类往里面填。</p>
+        </div>
+      </section>
+
+      <section class="review" id="review" data-nav="18">
+        <div class="section-index dark">02 / REVIEW</div>
+        <div class="review-head reveal">
+          <span class="p3-role">AI = Research Assistant</span>
+          <h2>Literature Review 是我认为<br><em>最适合 AI 提效</em>的阶段之一。</h2>
+          <p class="review-lead">重点不是「AI 帮我写综述」，而是把 AI 放进一个有真实文献来源约束的 Evidence Workflow。</p>
+        </div>
+        <figure class="evidence-flow reveal">
+          <div class="ef-track">
+            <span class="ef-node"><b>PDF / Zotero</b><small>本地文献库</small></span><i>→</i>
+            <span class="ef-node"><b>Screening</b><small>纳入排除筛选</small></span><i>→</i>
+            <span class="ef-node"><b>Classification</b><small>主题 / 方法 / 对象</small></span><i>→</i>
+            <span class="ef-node"><b>Extraction</b><small>RQ · Design · Sample · Method · Findings · Limitation</small></span><i>→</i>
+            <span class="ef-node"><b>Synthesis</b><small>一致 · 冲突 · 方法差异 · 空白</small></span><i>→</i>
+            <span class="ef-node"><b>Writing</b><small>章节结构</small></span>
+          </div>
+          <div class="ef-trace"><i></i><span>Source Traceability · 每一个结论都能回到原文</span></div>
+          <figcaption>让 AI 工作在「我自己提供的真实文献库」之上，而不是依赖模型自身的记忆。</figcaption>
+        </figure>
+        <div class="evidence-card reveal">
+          <span class="ec-label">Evidence Card · Claim → Evidence → Source</span>
+          <div class="ec-row"><b>AI 总结</b><p>「自然采光有助于改善患者情绪状态」</p></div>
+          <div class="ec-row"><b>对应论文</b><p>样本中的某篇实证研究（Design × Outcome）</p></div>
+          <div class="ec-row"><b>原文原句</b><p>“…natural light exposure was associated with improved patient mood…”</p></div>
+          <div class="ec-row"><b>位置</b><p>Results 段落 · 原文页码</p></div>
+          <div class="ec-row ec-final"><b>我的判断</b><p>方向成立，但需结合人群与测量条件限定结论边界</p></div>
+        </div>
+        <div class="review-principle reveal">
+          <p>把 AI 的知识来源，从「模型记忆」切换到「我提供的研究材料」。<br>AI 可以总结，但<em>必须让我能够回到原文</em>。</p>
+        </div>
+      </section>
+
+      <section class="write section-warm" id="write" data-nav="19">
+        <div class="section-index dark">03 / WRITE</div>
+        <div class="write-head reveal">
+          <span class="p3-role">AI = Editor</span>
+          <h2>先自己说，<br>再让 AI 帮我<em>说得更好</em>。</h2>
+          <p class="write-lead">不是 AI 先写、我再改——科研写作最重要的不是一句话漂不漂亮，而是这个判断是不是我的判断。</p>
+        </div>
+        <figure class="voice-transform reveal">
+          <div class="vt-raw"><span>我的原始想法</span><p>「我这一段其实想讲的是……前面的研究虽然已经做了很多，但是这里我觉得有一个问题……」</p></div>
+          <i class="vt-arrow">→</i>
+          <div class="vt-polished"><span>经过 AI 优化的表达</span><p>「既有研究在此问题上已积累较多成果，然而其中仍存在一处未被充分回应的关键缺口。」</p></div>
+          <figcaption>核心判断不变，变化的只是表达方式。</figcaption>
+        </figure>
+        <div class="write-verbs reveal">
+          <span>Rewrite 优化措辞</span><span>Structure 调整段落</span><span>Compress 删除重复</span><span>Academicize 学术表达</span><span>Connect 增强衔接</span><span>Terminology 统一术语</span>
+        </div>
+        <div class="write-highlight reveal">
+          <p>尤其论文进入中后期，<em>真正最了解整篇论文的人，不是 AI，而是作者自己。</em></p>
+        </div>
+      </section>
+
+      <section class="challenge section-dark" id="challenge" data-nav="20">
+        <div class="section-index">04 / CHALLENGE</div>
+        <div class="challenge-head reveal">
+          <span class="p3-role light">AI = Reviewer · Devil's Advocate</span>
+          <h2>不只让 AI 帮我，<br>而是主动让 AI <em>攻击我</em>。</h2>
+        </div>
+        <div class="role-switch reveal">
+          <span class="rs-help">帮我<small>Help Me</small></span><i class="rs-arrow">→</i><span class="rs-challenge">挑战我<small>Challenge Me</small></span>
+        </div>
+        <div class="challenge-list reveal">
+          <p>我会要求 AI：</p>
+          <ul>
+            <li>找出这个研究设计最可能被 Reviewer 攻击的 5 个问题</li>
+            <li>不要帮我优化，先论证为什么我的方案可能是错的</li>
+            <li>检查研究问题和方法是否真的匹配</li>
+            <li>找出哪些结论超出了证据支持范围</li>
+            <li>找出概念定义不一致的地方</li>
+            <li>检查前后章节有没有逻辑冲突</li>
+            <li>如果拒稿，最可能是什么原因</li>
+          </ul>
+        </div>
+        <div class="challenge-highlight reveal">
+          <p>不要只同意我。<br>试着<em>证明我错了</em>。<small>Don't just agree with me. Try to prove me wrong.</small></p>
+        </div>
+      </section>
+  </main>
+
+  <aside class="rail" aria-label="页面进度">
+    <a href="#part3" class="active" aria-label="AI 工作流开场"></a>
+    <a href="#learn" aria-label="理解研究"></a>
+    <a href="#review" aria-label="处理文献"></a>
+    <a href="#write" aria-label="优化写作"></a>
+    <a href="#challenge" aria-label="反向质疑"></a>
+  </aside>
+
+  <script src="app.js"></script>
+</body>
+</html>
